@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Electrical | We'll Turn You On</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Font 'Inter' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the 'Inter' font family to the whole site */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- 
+      Header & Navigation 
+    -->
+    <nav class="bg-gray-800 p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <span class="text-2xl font-bold text-yellow-400">Executive Electrical</span>
+            <div class="mt-4 md:mt-0 flex flex-wrap justify-center items-center gap-4">
+                <a href="#home" class="hover:text-yellow-400 transition-colors duration-200">Home</a>
+                <a href="#services" class="hover:text-yellow-400 transition-colors duration-200">Services</a>
+                <a href="#about" class="hover:text-yellow-400 transition-colors duration-200">About Us</a>
+                <a href="#contact" class="bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full hover:bg-yellow-300 transition-colors duration-200 whitespace-nowrap">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 
+      Hero Section 
+      UPDATE: New image URLs.
+    -->
+    <section id="home" class="h-screen min-h-[600px] flex flex-col justify-center items-center text-center p-8">
+        <!-- The Interactive Lightbulb (Updated to new URL) -->
+        <img id="bulb" 
+             src="https://raw.githubusercontent.com/ohmydaysOMD/executiveelectrical.github.io/refs/heads/main/ee%20off.png" 
+             alt="Interactive Lightbulb - Off" 
+             class="w-64 h-auto cursor-pointer mb-8 transition-all duration-300 ease-in-out hover:scale-105"
+             aria-live="polite"
+             onerror="this.onerror=null; this.src='https://placehold.co/256x256/111827/9ca3af?text=Bulb+Off';">
+
+        <h1 id="hero-headline" class="text-4xl md:text-6xl font-extrabold mb-4 transition-colors duration-300">
+            Feeling left in the dark?
+        </h1>
+        <p id="hero-subheadline" class="text-xl text-gray-300 transition-colors duration-300">
+            Click the bulb. We'll turn you on.
+        </p>
+    </section>
+
+    <!-- 
+      Services Section 
+    -->
+    <section id="services" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400">Our Services Get... *Shocking* Results</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">Expert Home Installations</h3>
+                    <p class="text-gray-300">New builds, full rewires, or just a dodgy socket. We'll sort your home electrics. We'll even handle your shorts.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">Commercial & Office Power</h3>
+                    <p class="text-gray-300">Keep your business buzzing. We handle lighting, data cabling, and keeping the all-important coffee machine flowing.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">Quickies & Emergency Call-Outs</h3>
+                    <p class="text-gray-300">Power gone at a bad time? Don't panic. We're ready to come at a moment's notice, day or night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+      About Us Section 
+    -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="text-4xl font-bold text-center mb-8 text-yellow-400">We Know How To... *Conduct* Ourselves</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                Look, we get it. Calling an electrician isn't exactly "fun". But at Executive Electrical, we're a bit different. We're a team of fully insured, RECI-registered sparks based right here in Ireland.
+            </p>
+            <p class="text-lg text-gray-300 mb-4">
+                We show up on time (we know, it's rare), we don't speak in confusing gibberish, and we *always* clean up after ourselves. It's the little things.
+            </p>
+            <p class="text-lg text-gray-300">
+                Our mission: To provide top-class electrical work without the shotty work or the bad attitudes.
+            </p>
+        </div>
+    </section>
+
+    <!-- 
+      Contact CTA Section 
+    -->
+    <section id="contact" class="py-20 bg-yellow-400 text-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's Make Sparks Fly</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Ready for a satisfying connection?
+                Get in touch for a free, no-nonsense quote.
+            </p>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" name="email" id="email" class="w-full px-4 py-3 rounded-lg shadow-inner text-gray-900" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 rounded-lg shadow-inner text-gray-900" placeholder="Tell us what you need..."></textarea>
+                </div>
+                <button type="submit" class="bg-gray-900 text-white font-bold py-3 px-12 rounded-full text-lg hover:bg-gray-700 transition-colors duration-300">
+                    Flick My Switch
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 
+      Footer 
+    -->
+    <footer class="py-8 bg-gray-900 text-center text-gray-500">
+        <p>© 2025 Executive Electrical. Licensed to thrill.</p>
+        <p>Made with ⚡ and a bit of charm.</p>
+    </footer>
+
+
+    <!-- 
+      JavaScript for the interactive bulb 
+      UPDATE: New image URLs.
+    -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const bulb = document.getElementById('bulb');
+            const heroHeadline = document.getElementById('hero-headline');
+            const heroSubheadline = document.getElementById('hero-subheadline');
+
+            // Define the image URLs
+            const bulbOffSrc = "https://raw.githubusercontent.com/ohmydaysOMD/executiveelectrical.github.io/refs/heads/main/ee%20off.png";
+            const bulbOnSrc = "https://raw.githubusercontent.com/ohmydaysOMD/executiveelectrical.github.io/refs/heads/main/ee.png";
+
+            // Keep track of the bulb's state
+            let isBulbOn = false;
+
+            // --- Preload the "on" image ---
+            const preloadImage = new Image();
+            preloadImage.src = bulbOnSrc;
+            // --- End Preload ---
+
+            // Add the click event listener to the bulb
+            bulb.addEventListener('click', () => {
+                
+                if (isBulbOn) {
+                    // If it's ON, turn it OFF
+                    bulb.src = bulbOffSrc;
+                    bulb.alt = "Interactive Lightbulb - Off";
+                    heroHeadline.textContent = "Feeling left in the dark?";
+                    heroSubheadline.textContent = "Click the bulb. We'll turn you on.";
+                    isBulbOn = false;
+                } else {
+                    // If it's OFF, turn it ON
+                    bulb.src = bulbOnSrc;
+                    bulb.alt = "Interactive Lightbulb - On";
+                    heroHeadline.textContent = "Ah, that's better!";
+                    heroSubheadline.textContent = "That's the spark we're talking about.";
+                    isBulbOn = true;
+                }
+            });
+            
+            // Add a fallback for the main image in case it fails to load
+            bulb.addEventListener('error', () => {
+                bulb.src = 'https://placehold.co/256x256/111827/9ca3af?text=Bulb+Off';
+            });
+
+        });
+    </script>
+
+</body>
+</html>
+
+
 
